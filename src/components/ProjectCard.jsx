@@ -55,7 +55,13 @@ export default function ProjectCard({ project }) {
     <img src={image} alt={`${name} preview`} className="absolute inset-0 h-full w-full object-cover" />
   </div>
 ) : (
+  {image ? (
+  <div className="relative aspect-[4/3] w-full overflow-hidden border border-border bg-surface">
+    <img src={image} alt={`${name} preview`} className="absolute inset-0 h-full w-full object-cover" />
+  </div>
+) : (
   <PlaceholderVisual name={name} />
+)}
 )}
       )}
 
