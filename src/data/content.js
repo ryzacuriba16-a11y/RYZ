@@ -14,6 +14,7 @@ export const profile = {
   // button will download it. Until then the link points at a placeholder.
   cvPath: "/cv/Ryza-Mae-Curiba-CV.pdf",
   email: "ryzacuriba16@gmail.com"
+  email: "2023-111458@rtu.edu.ph"
 };
 
 export const about = {
