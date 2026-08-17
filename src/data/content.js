@@ -87,7 +87,7 @@ export const projects = [
     description: "UI/UX design concept for a personal portfolio.",
     tech: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
     link: "https://ryz-one.vercel.app/",
-    image: null,
+    image: "favicon.svg",
   },
   {
     name: "Landing Page",
