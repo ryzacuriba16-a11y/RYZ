@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import useReducedMotion from "../hooks/useReducedMotion";
 
-// No real screenshots exist yet, so instead of a broken <img> or an
-// invented stock photo, each card gets a lightweight generated visual:
-// the project's initials in large type over a hairline-bordered panel.
+// No real screenshots exist for every project — for ones that don't have
+// an `image` set yet, this generates a lightweight placeholder instead of
+// a broken <img> or an invented stock photo: the project's initials over
+// a hairline-bordered panel.
 function PlaceholderVisual({ name }) {
   const initials = name
     .split(" ")
@@ -14,7 +15,7 @@ function PlaceholderVisual({ name }) {
     .toUpperCase();
 
   return (
-    <div className="relative aspect-[4/3] w-full overflow-hidden border border-border bg-surface">
+    <div className="relative aspect-4/3 w-full overflow-hidden border border-border bg-surface">
       <div
         className="absolute inset-0 opacity-[0.06]"
         style={{
@@ -31,7 +32,7 @@ function PlaceholderVisual({ name }) {
 }
 
 export default function ProjectCard({ project }) {
-  const { name, description, tech, link } = project;
+  const { name, description, tech, link, image } = project;
   const reducedMotion = useReducedMotion();
 
   return (
@@ -40,7 +41,17 @@ export default function ProjectCard({ project }) {
       transition={{ duration: 0.2, ease: "easeOut" }}
       className="group border border-border hover:border-border-strong transition-colors duration-200 flex flex-col"
     >
-      <PlaceholderVisual name={name} />
+      {image ? (
+        <div className="relative aspect-4/3 w-full overflow-hidden border border-border bg-surface">
+          <img
+            src={image}
+            alt={`${name} preview`}
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        </div>
+      ) : (
+        <PlaceholderVisual name={name} />
+      )}
 
       <div className="p-5 flex flex-col flex-1">
         <h4 className="font-display text-lg font-medium text-fg mb-1.5">{name}</h4>
@@ -65,13 +76,13 @@ export default function ProjectCard({ project }) {
               href={link}
               target="_blank"
               rel="noreferrer"
-              className="font-mono text-xs uppercase tracking-[0.1em] text-fg hover:text-fg-muted transition-colors"
+              className="font-mono text-xs uppercase tracking-widest text-fg hover:text-fg-muted transition-colors"
             >
               View Project →
             </a>
           ) : (
             <span
-              className="font-mono text-xs uppercase tracking-[0.1em] text-fg-faint cursor-not-allowed"
+              className="font-mono text-xs uppercase tracking-widest text-fg-faint cursor-not-allowed"
               title="Add a project link in src/data/content.js"
             >
               [Add project link]
