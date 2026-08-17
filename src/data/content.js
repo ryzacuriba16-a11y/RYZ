@@ -85,7 +85,7 @@ export const projects = [
     name: "Portfolio Website",
     category: "UI/UX Design",
     description: "UI/UX design concept for a personal portfolio.",
-    tech: ["React", "Vite", "Tailwind CSS", "Framer Motion"]
+    tech: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
     link: "https://ryz-one.vercel.app/",
     image: null,
   },
