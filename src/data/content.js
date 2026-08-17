@@ -67,7 +67,10 @@ export const experience = [
     org: "Municipal Environment and Natural Resources Office",
     role: "IT Intern",
     period: "March – April 2023",
-    bullets: [],
+    bullets: [
+      "Prepared and organized official documents and paperwork to support daily office operations and departmental meetings", 
+      "Participated in and assisted in coordinating a provincial event involving multiple Rizal municipalities" 
+     ],
   },
 ];
 
