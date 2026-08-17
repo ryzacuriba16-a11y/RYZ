@@ -83,8 +83,8 @@ export const projects = [
     category: "UI/UX Design",
     description: "UI/UX design concept for a personal portfolio.",
     tech: ["Figma"],
-    link: null,
-    image: null,
+    link: "https://ryz-one.vercel.app/",
+    image: "/assets/Ryzlogo.jpeg",
   },
   {
     name: "Landing Page",
