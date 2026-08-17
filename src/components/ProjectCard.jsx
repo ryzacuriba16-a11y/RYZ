@@ -50,7 +50,13 @@ export default function ProjectCard({ project }) {
           />
         </div>
       ) : (
-        <PlaceholderVisual name={name} />
+        {image ? (
+  <div className="relative aspect-[4/3] w-full overflow-hidden border border-border bg-surface">
+    <img src={image} alt={`${name} preview`} className="absolute inset-0 h-full w-full object-cover" />
+  </div>
+) : (
+  <PlaceholderVisual name={name} />
+)}
       )}
 
       <div className="p-5 flex flex-col flex-1">
