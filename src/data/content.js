@@ -13,10 +13,7 @@ export const profile = {
   // Put your actual CV file at public/cv/Ryza-Mae-Curiba-CV.pdf and this
   // button will download it. Until then the link points at a placeholder.
   cvPath: "/cv/Ryza-Mae-Curiba-CV.pdf",
-  email: [
-    "ryzacuriba16@gmail.com",
-    "2023-111458@rtu.edu.ph"
-  ]
+  email: "ryzacuriba16@gmail.com"
 };
 
 export const about = {
