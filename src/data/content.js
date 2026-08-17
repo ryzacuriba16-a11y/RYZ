@@ -94,7 +94,7 @@ export const projects = [
     category: "UI/UX Design",
     description: "UI/UX design concept for a product landing page.",
     tech: ["Figma"],
-    link: null,
+    link: "NA",
     image: null,
   },
   {
@@ -102,7 +102,7 @@ export const projects = [
     category: "UI/UX Design",
     description: "UI concept design spanning a web and mobile app experience.",
     tech: ["Figma"],
-    link: null,
+    link: "NA",
     image: null,
   },
   {
@@ -110,15 +110,15 @@ export const projects = [
     category: "UI/UX Design",
     description: "UI/UX design concept for a quiz application.",
     tech: ["Figma"],
-    link: null,
+    link: "NA",
     image: null,
   },
   {
     name: "E-commerce Product Page",
     category: "UI/UX Design",
     description: "UI/UX design concept for an e-commerce product page.",
-    tech: ["Figma"],
-    link: null,
+    tech: ["HTML", "CSS"],
+    link: "NA",
     image: null,
   },
   {
@@ -126,7 +126,7 @@ export const projects = [
     category: "Web Development",
     description: "A browser-based photo booth built with HTML, CSS, and JavaScript.",
     tech: ["HTML", "CSS", "JavaScript"],
-    link: null,
+    link: "NA",
     image: null,
   },
   {
@@ -134,7 +134,7 @@ export const projects = [
     category: "Web Development",
     description: "An interactive interface exploring front-end behaviour with HTML, CSS, and JavaScript.",
     tech: ["HTML", "CSS", "JavaScript"],
-    link: null,
+    link: "NA",
     image: null,
   },
   {
@@ -142,7 +142,7 @@ export const projects = [
     category: "Academic Project",
     description: "A chatbot built for Discord as an academic project.",
     tech: [],
-    link: null,
+    link: "NA",
     image: null,
   },
   {
@@ -150,7 +150,7 @@ export const projects = [
     category: "Academic Project",
     description: "A game built in Python as an academic project.",
     tech: ["Python"],
-    link: null,
+    link: "NA",
     image: null,
   },
   {
@@ -158,15 +158,7 @@ export const projects = [
     category: "Academic Project",
     description: "Character and visual design work created for coursework.",
     tech: [],
-    link: null,
-    image: null,
-  },
-  {
-    name: "Other IT Projects",
-    category: "Academic Project",
-    description: "Additional academic projects focused on logic, design, and problem solving.",
-    tech: [],
-    link: null,
+    link: "NA",
     image: null,
   },
 ];
