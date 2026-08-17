@@ -12,7 +12,7 @@ export const profile = {
     "BS Information Technology student interested in creating clean digital experiences, building web projects, and solving practical IT problems.",
   // Put your actual CV file at public/cv/Ryza-Mae-Curiba-CV.pdf and this
   // button will download it. Until then the link points at a placeholder.
-  cvPath: "/Ryza-Mae-Curiba-CV.pdf",
+  cvPath: "Ryza-Mae-Curiba-CV.pdf",
   email: "ryzacuriba16@gmail.com",
 };
 
